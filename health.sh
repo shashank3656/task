@@ -5,6 +5,6 @@ if curl -v $MYHOST  2>&1 | grep -w "200\|301\|302\|308" > /dev/null
 then
 echo "server is up"
 else
-screen -m -d /usr/bin/python3 /home/ubuntu/send.py
+/usr/bin/python3 /task/send.py
 echo "server is down"
 fi
